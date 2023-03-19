@@ -152,6 +152,8 @@ if USE_S3:
     MEDIA_URL = f'{AWS_S3_ENDPOINT_URL}/{PUBLIC_MEDIA_LOCATION}/' 
     # DEFAULT_FILE_STORAGE = os.getenv('DEFAULT_FILE_STORAGE')
     DEFAULT_FILE_STORAGE = 'project.storage_backends.PublicMediaStorage'
+    # DEFAULT_FILE_STORAGE = 'project.storage_backends.MediaStorage'
+
     # s3 private media settings
     PRIVATE_MEDIA_LOCATION = 'private'
     PRIVATE_FILE_STORAGE = 'project.storage_backends.PrivateMediaStorage'

@@ -1,3 +1,7 @@
 venv
 venv/*
 env/*
+db.sqlite3
+*.pyc
+*.swp
+_pycache*
